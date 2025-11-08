@@ -32,6 +32,7 @@ public class Mace extends JavaPlugin implements Listener {
     public boolean enabled;
     public boolean craftingrecipe;
     public int maxdmg;
+    public int damagemultiplier;
 
     private final Map<UUID, Long> cooldowns = new HashMap<>();
     
@@ -39,6 +40,7 @@ public class Mace extends JavaPlugin implements Listener {
         this.enabled = getConfig().getBoolean("enabled", true);
         this.maxdmg = getConfig().getInt("max-damage", 0);
         this.craftingrecipe = getConfig().getBoolean("crafting-recipe", true);
+        this.damagemultiplier = getConfig().getInt("damage-multiplier", 1);
     }
 
     @Override
@@ -83,9 +85,9 @@ public class Mace extends JavaPlugin implements Listener {
                             if (meta.getLore().contains("Mace Backported!") && item.getType() == Material.WOODEN_AXE){
                                 double damage;
                                 if (maxdmg != 0 && player.getFallDistance() != 0) {
-                                    damage = Math.max(7, (Math.min(maxdmg, (player.getFallDistance()))));
+                                    damage = Math.max(7, (Math.min(maxdmg, (player.getFallDistance() * damagemultiplier))));
                                 } else {
-                                    damage = Math.max(7, (player.getFallDistance()));
+                                    damage = Math.max(7, (player.getFallDistance() * damagemultiplier));
                                 }
                                 // player.sendMessage(String.valueOf(player.getFallDistance()));
                                 player.setFallDistance(0);
