@@ -3,6 +3,7 @@ version: 1.0
 name: Mace
 author: TheMrRedSlime
 api-version: 1.13
+description: A Plugin that backports the mace.
 
 commands:
   givemace:
