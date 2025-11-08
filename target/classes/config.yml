@@ -1,8 +1,0 @@
-enabled: true
-
-# this is the max damage the mace can do. set this to zero for no limit
-max-damage: 0
-# For some ungodly reason you think this isnt enough. heres also a multiplier
-damage-multiplier: 1
-# should enable crafting recipe?
-crafting-recipe: true
