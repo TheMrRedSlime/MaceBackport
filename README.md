@@ -7,3 +7,16 @@ It also has a crafting recipe, shown here.
 ![Crafting Recipe](craftingrecipe.png)
 
 It supports version 1.13-1.21 and onwards i believe.
+
+## Config
+
+this is the YAML config:
+```yml
+enabled: true
+# this is the max damage the mace can do. set this to zero for no limit
+max-damage: 0
+# A Multiplier incase you think this is not enough
+damage-multiplier: 1
+# This enables the craftng recipe
+crafting-recipe: true
+```
