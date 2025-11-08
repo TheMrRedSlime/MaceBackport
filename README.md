@@ -14,6 +14,14 @@ It supports version 1.13-1.21 and onwards.
 
 Its that simple.
 
+## Commands
+
+There are two commands
+
+**/givemace**: Gives the mace. Simple
+
+**/reloadmace**: Reload's the config of the mace.
+
 ## Config
 
 this is the YAML config:
