@@ -27,6 +27,9 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
 
+// Quick Note before yall look
+// Some code might look ugly cause i wrote this in a rush
+// <3 From RedSlime
 
 public class Mace extends JavaPlugin implements Listener {
     public boolean enabled;
